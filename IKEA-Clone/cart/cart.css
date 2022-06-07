@@ -1,0 +1,392 @@
+ body {
+     margin-top: 30px;
+ }
+
+ * {
+     margin: 0px;
+     box-sizing: border-box;
+     font-family: Noto IKEA, Noto Sans, Roboto, Open Sans, sans-serif;
+
+ }
+ #headerButton{
+   
+     text-align: center;
+ }
+ #productDetails>img{
+     
+     /* background-color: #333; */
+    margin-left: 42%;
+ }
+
+   .overLay {
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100%;
+       background: hsla(0, 0%, 100%, .75);
+       opacity: 0;
+       pointer-events: none;
+   }
+
+   .popUp {
+       overflow: auto;
+       box-shadow: 0 0 7px 2px #ccc;
+       width: 60%;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       padding: 24px 16px 40px 16px;
+       border-radius: 2px;
+       margin-top: 24px;
+       margin-bottom: 40px;
+       position: fixed;
+       top: 19%;
+       left: 50%;
+       background-color: #fff;
+       transform: translate(-50%, -50%);
+   }
+
+   .active {
+       opacity: 2;
+       pointer-events: auto;
+   }
+
+   .popUp img {
+       width: 22px;
+       cursor: pointer;
+
+   }
+
+   #heading {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .shoppingCartItemDetail {
+       padding: 24px 0;
+       display: flex;
+       justify-content: space-between;
+       text-align: center;
+   }
+
+   .shoppingCartItemDetail>div>a:hover {
+       text-decoration: underline;
+
+   }
+
+   button {
+       text-decoration: none;
+       border: none;
+       background: #fff
+   }
+
+   a {
+       text-decoration: none;
+       color: #0058a3;
+   }
+
+   b {
+       font-size: large;
+
+
+   }
+
+   #createNewCart {
+       /* margin-bottom: 20px; */
+       padding-top: 16px;
+       padding-bottom: 16px;
+
+   }
+
+   #createNewCart>button {
+       color: #0058a3;
+   }
+
+   #createNewCart>button:hover {
+       cursor: pointer;
+       text-decoration: underline;
+   }
+
+ #buttons {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ #buttons>div {
+     margin: 20px;
+
+ }
+
+ #buttons>div>a>button {
+     padding: 12px;
+     font-size: 14px;
+     width: 350px;
+     border: none;
+     color: #fff;
+    background-color: #0058a3;
+        border-color: #0058a3;
+     border-radius: 2px;
+     cursor: pointer;
+ }
+  #buttons>div>a>button:hover{
+      opacity: 0.9;
+  }
+
+ #services {
+     width: 75%;
+     margin: auto;
+     display: grid;
+     gap: 30px;
+     margin-top: 20px;
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .innerDiv {
+     display: flex;
+     border: 1px solid rgb(189, 188, 188);
+ }
+
+ .innerDiv>div>img {
+     padding: 30px;
+ }
+
+ .policyDiv>div {
+     padding: 5px;
+ }
+
+ .policyDiv a {
+     color: #0058a3;
+     ;
+     float: right;
+     padding-right: 20px;
+ }
+
+
+ .cartDetail {
+     /* display: flex; */
+
+     justify-content: center;
+
+     gap: 10px;
+
+
+ }
+
+ .cartDetail>button img {
+     width: 22px;
+ }
+
+ .cartDetail>button {
+     border: none;
+     background-color: #fff;
+ }
+
+ .cartDetail>button:hover {
+     cursor: pointer;
+     text-decoration: underline;
+ }
+
+ .cartDetail>img {
+     width: 200px;
+     height: 200px;
+     margin: 20px;
+ }
+
+ .cartMsg {
+     color: #333;
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ .cartMsg>a {
+     color: #0058a3;
+
+ }
+
+ .cartMsg>a:hover {
+     cursor: pointer;
+     color: black;
+    
+ }
+
+ #CreateCartContainer form{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+
+     /* background-color: blueviolet; */
+ }
+  #CreateCartContainer input{
+    font-size: .875rem;
+        line-height: 1.143;
+        color: #333;
+      padding: 10px;
+    text-decoration: none;
+    border: 1px thin black;
+    
+    
+    
+  }
+  #CreateCartContainer form>div>button {
+    box-sizing: border-box;
+    text-align: center;
+    width: 49%;
+    font-size: .875rem;
+        color: #333;
+        padding: 10px;
+        text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+
+  }
+  #createCartButton{
+      margin-left:2%;
+    border: 1px thin black;
+    background-color: #0058a3;
+  }
+  #cancelButton{
+    border: .5px solid black;
+  }
+
+  #newCart>div{
+      width: 100%;
+    display: flex;
+   
+    justify-content: space-between;
+    
+  }
+   #newCart>div>div{
+    display: block;   
+      
+   }
+
+ #deliveryOption {
+     width: 60%;
+     margin: auto;
+
+ }
+
+
+ #upperDiv {
+     display: flex;
+     justify-content: center;
+ }
+
+ #lowerDiv {
+     display: flex;
+     justify-content: space-around;
+     gap: 20px;
+
+ }
+
+ #lowerDiv button {
+     border: none;
+     background-color: #fff;
+     color: #0058a3;
+
+
+ }
+
+ #lowerDiv button:hover {
+     cursor: pointer;
+
+ }
+
+ #lowerDiv img {
+     width: 32px;
+     height: 32px;
+ }
+
+ #lowerDiv button {
+     width: 70px;
+ }
+
+ #checkDelivery input {
+     width: 100%;
+     font-size: 20px;
+     padding: 5px;
+
+     margin-bottom: 12px;
+ }
+
+ #checkDelivery button {
+     width: 50%;
+     font-size: .8125rem;
+     line-height: 37px;
+     padding: 5px;
+     background-color: #0058a3;
+     border: none;
+     color: #fff;
+     margin: auto;
+ }
+
+ #selectStore {
+     margin: auto;
+     width: 50%;
+     font-size: 20px;
+     padding: 5px;
+     display: block;
+
+     margin-bottom: 12px;
+ }
+
+ #buttonCenter {
+     text-align: center;
+
+     margin: auto;
+ }
+ #productDetails {
+     width: 60%;
+     margin: auto;
+    
+ }
+
+ #productDetails>div>div {
+     display: flex;
+     gap: 20px;
+     
+     justify-content: space-between;
+ }
+
+ #productDetails>div>div+div {
+
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ #productDetails>div>div+div button {
+     border: none;
+     background-color: #fff;
+     border: 1px solid black;
+ }
+
+ #productDetails>div>div+div select {
+     font-size: 20px;
+     width: 10%;
+ }
+
+ #productDetails>div>div>div {
+     display: flex;
+
+ }
+
+ #productDetails img {
+     padding-top: 10px;
+     width: 136px;
+     height: 136px;
+
+ }
+ #imageSize img {
+
+     width: 23px;
+     height: 23px;
+ }
+
+        #totalCartAmout>div {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }

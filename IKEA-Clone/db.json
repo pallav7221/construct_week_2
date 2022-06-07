@@ -1,0 +1,14 @@
+{
+  "userInformation":{
+    "userName" : "name",
+    "userEmail" : "email",
+    "userNumber" : "number",
+    "userPassword":"password",
+
+    "cart" : [
+      "productImg" 
+    ]
+  }
+
+
+}
